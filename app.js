@@ -5,6 +5,7 @@ import { maximo } from './funciones/maximo.js';
 import { raiz } from './funciones/raiz.js';
 import { division } from './funciones/division.js';
 import { seno } from './funciones/seno.js';
+import { potencia } from './funciones/potencia.js';
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -65,6 +66,10 @@ function calcular() {
   } else if (op === "seno") {
 
     resultado = seno(v1);
+
+  } else if (op === "potencia") {
+
+    resultado = potencia(v1, v2);
 
   } else {
 
